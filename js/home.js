@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', function(){
         yesBtn.style.display = "none";
         noBtn.style.display = "none";
         createHearts();
-        myAudio.src = 'yes.mp3';
+        myAudio.src = 'img/yes.mp3';
         myAudio.play();
     });
 
