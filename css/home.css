@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+
+h2{
+    position: relative;
+    color:  #ff006f;
+    margin-top: 30px;
+    font-size: 2rem;
+    font-family: 'Silkscreen', sans-serif;
+    text-align: center;
+}
+p{
+    position: relative;
+    color:  #ff006f;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Dhurjati', sans-serif;
+    text-align: center;
+}
+
+img{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    margin-left: 40%;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.btns{
+    justify-content: space-between;
+    padding: 30px;
+    margin-left: 40%;
+    margin-top: 40px;
+}
+
+.yes_btn{
+    margin-right: 20px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background: #ff7575;
+    font-size: 16px;
+    color: white;
+    border-radius: 30px;
+    border-bottom: 2px solid black;
+    transition: .2s ease-in;
+}
+.yes_btn:hover{
+    width: 118px;
+    height: 38px;
+    background: #d06161f5;
+}
+
+.no_btn{
+    margin-left: 20px;
+    width: 120px;
+    height: 40px; 
+    border: none;
+    font-size: 16px;
+    color: white;
+    background: #ff7575;
+    border-radius: 30px;
+    border-bottom: 2px solid black;
+}
+
+.hearts-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background:none;
+    transform: rotate(-45deg);
+
+    animation: fall linear infinite;
+}
+
+.heart::before{
+    content: '\1F496';
+    font-family: 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Apple Color Emoji', 'Android Emoji', 'EmojiSymbols';
+    font-size: 32px;
+}
+
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+.audio-container {
+    display: none;
+}
